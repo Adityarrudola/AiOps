@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-bottom: 0.3rem;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+.status-box {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+a {
+  color: #38bdf8;
+}
