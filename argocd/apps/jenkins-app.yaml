@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-org/ai-observability.git'
+    repoURL: 'https://github.com/Adityarrudola/AiOps.git'
     targetRevision: HEAD
     path: charts/jenkins
     helm:
