@@ -1,11 +1,12 @@
-FROM node:20-alpine
-WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm install
-COPY . .
-RUN npm run build
+FROM python:3.11-slim
 
-FROM nginx:alpine
-COPY --from=0 /app/dist /usr/share/nginx/html
-EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY main.py .
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]

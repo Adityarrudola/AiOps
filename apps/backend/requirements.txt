@@ -1,8 +1,6 @@
 fastapi
 uvicorn
 psutil
-opentelemetry-distro
-opentelemetry-instrumentation-fastapi
-opentelemetry-exporter-otlp-proto-grpc
 prometheus-client
 pydantic
+requests
